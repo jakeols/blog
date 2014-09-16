@@ -2,14 +2,14 @@
 <html>
 <head>
     {{ HTML::style('css/bootstrap.css'); }}
+    {{ HTML::style('css/custom.css'); }}
 </head>
 <body>
-    
-</body>
-</html>
 <div class="container">
 @foreach($posts as $post)
-{{ $post->title; }}
-{{ $post->body; }}
+<h1>{{ $post->title; }}</h1>
+<p>{{ $post->body; }}</p>
 @endforeach
 </div>
+</body>
+</html>
