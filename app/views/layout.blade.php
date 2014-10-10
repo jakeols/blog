@@ -11,6 +11,7 @@
             </ul>
         </nav>
 <div class="container">
+<h1 class="text" id="header"> Blog </h1>
     @yield('posts')
     {{ $posts->links(); }}
 

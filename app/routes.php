@@ -13,4 +13,21 @@
 
 Route::get('/', 'PostsController@index');
 
-Route::resource('posts', 'PostsController');
+
+Route::resource('sessions', 'SessionsController');
+
+Route::get('login', 'SessionsController@create');
+
+
+Route::group(array('before' => 'auth'), function()
+{
+
+  Route::resource('posts', 'PostsController');
+
+  Route::get('/dashboard', function()
+  {
+    return View::make('dashboard');
+  });
+
+
+});

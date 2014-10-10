@@ -13,3 +13,15 @@
 {
     color: black;
 }
+ul.nav a:hover 
+{ 
+    color: #000 !important; 
+}
+#header
+{
+    margin-top: -20px;
+    text-align: center;
+}
+.date {
+    max-width: 200px;
+}

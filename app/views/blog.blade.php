@@ -4,11 +4,14 @@
     @foreach($posts as $post)
     <tr>
         <td><h2 class="text">
-            
+
+            <!-- add some type of date, modify timestamps perhaps? -->
+          
+
             {{ link_to_action('PostsController@show', $post->title, $post->id)}}</h2></td>
     </tr>
     <tr>
-        <td>  
+        <td>
 <?php
     if(strlen($post->body)<140){
     echo $post->body;
